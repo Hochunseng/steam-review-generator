@@ -23,7 +23,8 @@ list_of_files = [
     'requirements.txt',
     'setup.py',
     'notebooks/steam-review-transformer.ipynb',
-    'data_extract/extract.py'
+    'data_extract/extract.py',
+    'templates/index.html'
 ]
 
 
