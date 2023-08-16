@@ -7,8 +7,7 @@ import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
-from typing import AnyStr
-import base64
+from typing import Any
 
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
@@ -36,7 +35,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         raise e
     
 @ensure_annotations
-def crate_directories(path_to_directories: list, verbose=True):
+def create_directories(path_to_directories: list, verbose=True):
     """create list of directories
 
     Args:
@@ -50,7 +49,7 @@ def crate_directories(path_to_directories: list, verbose=True):
             logger.info(f'Created Directory At: {path}')
 
 @ensure_annotations
-def save_json(path: Path, data:dict):
+def save_json(path: Path, data: dict):
     """save json data
 
     Args:
